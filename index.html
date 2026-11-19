@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#080808" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Invitación de Graduación | Promoción DREAM 2026 - Colegio La Misión de Jesús</title>
+  <meta name="description" content="Tenemos el honor de invitarte al Acto de Graduación de la Promoción DREAM 2026 (Divertidos Recuerdos Entre Amigos Memorables) del Colegio Particular Evangélico La Misión de Jesús. Sábado 28 de noviembre de 2026 - 19:00 hrs." />
+  <meta name="keywords" content="Graduación DREAM 2026, Colegio Particular Evangélico La Misión de Jesús, Invitación Digital, Promoción 2026" />
+  <meta name="author" content="Promoción DREAM 2026" />
+
+  <!-- Open Graph / WhatsApp / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_BO" />
+  <meta property="og:title" content="✨ Invitación de Graduación | Promoción DREAM 2026 ✨" />
+  <meta property="og:description" content="Colegio Particular Evangélico 'La Misión de Jesús' — Sábado 28 de noviembre de 2026 a las 19:00 hrs. ¡Acompáñanos a celebrar esta noche inolvidable!" />
+  <meta property="og:image" content="assets/grupales/DSC_0637.jpg" />
+  <meta property="og:image:alt" content="Promoción DREAM 2026 - Colegio Particular Evangélico La Misión de Jesús" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Invitación de Graduación | Promoción DREAM 2026" />
+  <meta name="twitter:description" content="Divertidos Recuerdos Entre Amigos Memorables — Sábado 28 de noviembre de 2026, 19:00 hrs." />
+  <meta name="twitter:image" content="assets/grupales/DSC_0637.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo/logo.jpeg" />
+
+  <!-- Google Fonts: Cinzel, Playfair Display, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de Estilos Principal -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="locked-scroll">
+
+  <!-- Lienzo de Partículas Doradas Optimizado -->
+  <canvas id="goldParticles" aria-hidden="true"></canvas>
+
+  <!-- Luces Ambientales de Gala -->
+  <div class="ambient-glow ambient-glow--top" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--bottom" aria-hidden="true"></div>
+
+  <!-- =====================================================================
+       1. PANTALLA DE BIENVENIDA (PORTADA DE LUJO)
+       ===================================================================== -->
+  <section id="welcomeScreen" class="welcome-screen" aria-label="Portada de bienvenida">
+    <div class="welcome-screen__backdrop"></div>
+    <div class="welcome-screen__frame">
+      <!-- Esquinas ornamentales doradas -->
+      <span class="corner-ornament corner-ornament--tl" aria-hidden="true"></span>
+      <span class="corner-ornament corner-ornament--tr" aria-hidden="true"></span>
+      <span class="corner-ornament corner-ornament--bl" aria-hidden="true"></span>
+      <span class="corner-ornament corner-ornament--br" aria-hidden="true"></span>
+
+      <div class="welcome-screen__content">
+        <!-- Logo y Nombre del Colegio -->
+        <div class="welcome-institution">
+          <div class="welcome-logo-ring">
+            <img
+              src="assets/logo/logo.jpeg"
+              alt="Logo Colegio Particular Evangélico La Misión de Jesús"
+              class="welcome-logo"
+              width="96"
+              height="96"
+            />
+          </div>
+          <p class="welcome-school-name">
+            COLEGIO PARTICULAR EVANGÉLICO<br />
+            <span>“LA MISIÓN DE JESÚS”</span>
+          </p>
+        </div>
+
+        <!-- Frase de honor -->
+        <div class="welcome-honor-badge">
+          <span class="gold-line" aria-hidden="true"></span>
+          <p class="welcome-honor-text">Tenemos el honor de invitarte</p>
+          <span class="gold-line" aria-hidden="true"></span>
+        </div>
+
+        <!-- Título Principal Grande -->
+        <h1 class="welcome-title" data-text="DREAM 2026">
+          <span class="welcome-title__main">DREAM 2026</span>
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="welcome-subtitle">
+          “Divertidos Recuerdos Entre Amigos Memorables”
+        </p>
+
+        <!-- Imagen grupal de la promoción -->
+        <div class="welcome-photo-wrapper">
+          <div class="welcome-photo-frame">
+            <img
+              src="assets/grupales/DSC_0637.jpg"
+              alt="Promoción DREAM 2026 con toga y birrete"
+              class="welcome-photo"
+            />
+            <div class="welcome-photo-overlay">
+              <span class="welcome-photo-caption">Promoción DREAM 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón Dorado Animado -->
+        <div class="welcome-action">
+          <button id="openInvitationBtn" class="btn-gold btn-gold--pulse" type="button">
+            <span class="btn-gold__shimmer" aria-hidden="true"></span>
+            <svg class="btn-gold__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span class="btn-gold__text">ABRIR INVITACIÓN</span>
+          </button>
+          <p class="welcome-hint">Toca para abrir e iniciar la experiencia musical</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       CONTENIDO PRINCIPAL DE LA INVITACIÓN
+       ===================================================================== -->
+  <div id="mainInvitation" class="main-invitation" aria-hidden="true">
+
+    <!-- Barra de Navegación Superior Flotante (Glassmorphism) -->
+    <header id="topNavbar" class="top-navbar">
+      <div class="container top-navbar__inner">
+        <a href="#heroSection" class="top-navbar__brand">
+          <img src="assets/logo/logo.jpeg" alt="Logo" class="top-navbar__logo" />
+          <span class="top-navbar__title">DREAM <span>2026</span></span>
+        </a>
+        <nav class="top-navbar__nav" aria-label="Secciones de la invitación">
+          <a href="#presentacion" class="top-navbar__link">Mensaje</a>
+          <a href="#evento" class="top-navbar__link">Evento</a>
+          <a href="#estudiantes" class="top-navbar__link">Graduados</a>
+          <a href="#recuerdos" class="top-navbar__link">Recuerdos</a>
+          <a href="#docentes" class="top-navbar__link">Docentes</a>
+          <a href="#significadoDream" class="top-navbar__link">DREAM</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================================================================
+           2. PORTADA PRINCIPAL / APERTURA DE LA INVITACIÓN
+           =================================================================== -->
+      <section id="heroSection" class="hero-section">
+        <div class="hero-section__bg">
+          <img
+            src="assets/grupales/DSC_0645.jpg"
+            alt="Graduados Promoción DREAM 2026"
+            class="hero-section__bg-img"
+          />
+          <div class="hero-section__bg-overlay"></div>
+        </div>
+
+        <div class="container hero-section__content reveal-item">
+          <!-- Icono Birrete de Gala -->
+          <div class="gala-crest" aria-hidden="true">
+            <svg class="gala-crest__svg" viewBox="0 0 64 64" fill="none">
+              <path d="M32 10L6 22L32 34L58 22L32 10Z" stroke="url(#goldGrad1)" stroke-width="2.2" stroke-linejoin="round" fill="rgba(212,175,55,0.12)" />
+              <path d="M16 27V42C16 46.5 23.2 51 32 51C40.8 51 48 46.5 48 42V27" stroke="url(#goldGrad1)" stroke-width="2.2" stroke-linecap="round" />
+              <path d="M54 24V41" stroke="url(#goldGrad1)" stroke-width="2.2" stroke-linecap="round" />
+              <circle cx="54" cy="43" r="2.5" fill="#FFD700" />
+              <defs>
+                <linearGradient id="goldGrad1" x1="6" y1="10" x2="58" y2="51" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD700" />
+                  <stop offset="0.5" stop-color="#D4AF37" />
+                  <stop offset="1" stop-color="#C9A227" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <p class="hero-section__institution">
+            COLEGIO PARTICULAR EVANGÉLICO “LA MISIÓN DE JESÚS”
+          </p>
+
+          <div class="hero-section__badge">GALA DE GRADUACIÓN</div>
+
+          <h2 class="hero-section__title">
+            PROMOCIÓN <span class="gold-shimmer-text">DREAM 2026</span>
+          </h2>
+
+          <p class="hero-section__motto">
+            “Divertidos Recuerdos Entre Amigos Memorables”
+          </p>
+
+          <div class="hero-section__date-pill">
+            <span>Sábado 28 de Noviembre de 2026</span>
+            <span class="dot-sep" aria-hidden="true">•</span>
+            <span>19:00 Hrs.</span>
+          </div>
+
+          <a href="#presentacion" class="scroll-down-indicator" aria-label="Desplazarse al mensaje de presentación">
+            <span class="scroll-down-indicator__text">Descubrir</span>
+            <span class="scroll-down-indicator__chevron" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           3 & 4. PRESENTACIÓN DE LA PROMOCIÓN Y MENSAJE EMOTIVO
+           =================================================================== -->
+      <section id="presentacion" class="section presentation-section">
+        <div class="container">
+          <div class="luxury-card presentation-card reveal-item">
+            <span class="corner-ornament corner-ornament--tl" aria-hidden="true"></span>
+            <span class="corner-ornament corner-ornament--tr" aria-hidden="true"></span>
+            <span class="corner-ornament corner-ornament--bl" aria-hidden="true"></span>
+            <span class="corner-ornament corner-ornament--br" aria-hidden="true"></span>
+
+            <!-- Nombre DREAM animado con letras doradas -->
+            <div class="dream-emblem" aria-label="DREAM 2026">
+              <div class="dream-emblem__letters">
+                <span class="dream-emblem__letter" style="--i: 0">D</span>
+                <span class="dream-emblem__letter" style="--i: 1">R</span>
+                <span class="dream-emblem__letter" style="--i: 2">E</span>
+                <span class="dream-emblem__letter" style="--i: 3">A</span>
+                <span class="dream-emblem__letter" style="--i: 4">M</span>
+              </div>
+              <span class="dream-emblem__year">PROMOCIÓN 2026</span>
+            </div>
+
+            <div class="ornamental-divider" aria-hidden="true">
+              <span class="ornamental-divider__line"></span>
+              <span class="ornamental-divider__diamond">◆</span>
+              <span class="ornamental-divider__line"></span>
+            </div>
+
+            <!-- Mensaje emotivo oficial -->
+            <div class="presentation-message">
+              <p class="presentation-message__paragraph">
+                “Hay momentos que permanecen para siempre en nuestros corazones. Hoy celebramos el final de una etapa llena de aprendizajes, sueños, desafíos y amistades inolvidables.
+              </p>
+              <p class="presentation-message__paragraph">
+                La Promoción <strong>DREAM 2026</strong> del <strong>Colegio Particular Evangélico La Misión de Jesús</strong> tiene el honor de invitarte a compartir una noche especial, donde los recuerdos se convierten en historias y los sueños comienzan a hacerse realidad.”
+              </p>
+            </div>
+
+            <div class="presentation-signature">
+              <img src="assets/logo/logo.jpeg" alt="Escudo del Colegio" class="presentation-signature__logo" loading="lazy" />
+              <span>La Misión de Jesús • Gala 2026</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           5. INFORMACIÓN DEL EVENTO (FECHA, HORA Y LUGAR)
+           =================================================================== -->
+      <section id="evento" class="section event-section">
+        <div class="container">
+          <div class="section-header reveal-item">
+            <span class="section-header__eyebrow">Celebremos Juntos</span>
+            <h2 class="section-header__title">DETALLES DEL EVENTO</h2>
+            <div class="ornamental-divider" aria-hidden="true">
+              <span class="ornamental-divider__line"></span>
+              <span class="ornamental-divider__diamond">✦</span>
+              <span class="ornamental-divider__line"></span>
+            </div>
+          </div>
+
+          <div class="luxury-card event-card reveal-item">
+            <span class="corner-ornament corner-ornament--tl" aria-hidden="true"></span>
+            <span class="corner-ornament corner-ornament--tr" aria-hidden="true"></span>
+            <span class="corner-ornament corner-ornament--bl" aria-hidden="true"></span>
+            <span class="corner-ornament corner-ornament--br" aria-hidden="true"></span>
+
+            <div class="event-card__header">
+              <p class="event-card__ceremony">ACTO DE GRADUACIÓN</p>
+              <h3 class="event-card__promo">PROMOCIÓN DREAM 2026</h3>
+              <p class="event-card__subtitle">“Divertidos Recuerdos Entre Amigos Memorables”</p>
+            </div>
+
+            <div class="event-details-grid">
+              <!-- Fecha -->
+              <article class="event-detail-item">
+                <div class="event-detail-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                    <rect x="3" y="4" width="18" height="18" rx="2.5" />
+                    <line x1="16" y1="2" x2="16" y2="6" stroke-linecap="round" />
+                    <line x1="8" y1="2" x2="8" y2="6" stroke-linecap="round" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <path d="M9 15l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <span class="event-detail-item__label">Fecha</span>
+                <p class="event-detail-item__value">Sábado 28 de noviembre de 2026</p>
+              </article>
+
+              <!-- Hora -->
+              <article class="event-detail-item">
+                <div class="event-detail-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3.5 2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <span class="event-detail-item__label">Hora</span>
+                <p class="event-detail-item__value">19:00 <span class="event-detail-item__sub">(7:00 PM)</span></p>
+              </article>
+
+              <!-- Lugar -->
+              <article class="event-detail-item">
+                <div class="event-detail-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                    <path d="M12 21s-7-5.75-7-11a7 7 0 1114 0c0 5.25-7 11-7 11z" stroke-linejoin="round" />
+                    <circle cx="12" cy="10" r="2.5" />
+                  </svg>
+                </div>
+                <span class="event-detail-item__label">Lugar</span>
+                <p class="event-detail-item__value">Colegio Particular Evangélico La Misión de Jesús</p>
+              </article>
+            </div>
+
+            <div class="event-card__actions">
+              <a
+                href="https://maps.app.goo.gl/WTrRxNeZVKfU1EFV9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-gold"
+              >
+                <span class="btn-gold__shimmer" aria-hidden="true"></span>
+                <svg class="btn-gold__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="btn-gold__text">VER UBICACIÓN</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           6. CUENTA REGRESIVA
+           =================================================================== -->
+      <section id="cuentaRegresiva" class="section countdown-section">
+        <div class="container">
+          <div class="section-header reveal-item">
+            <span class="section-header__eyebrow">Cada Segundo Cuenta</span>
+            <h2 class="section-header__title">CUENTA REGRESIVA PARA LA GRAN NOCHE</h2>
+            <p class="section-header__subtitle">Sábado 28 de noviembre de 2026 • 19:00 Hrs. (Hora de Bolivia)</p>
+          </div>
+
+          <div class="countdown-wrapper reveal-item">
+            <div id="countdownBoxes" class="countdown-grid" role="timer" aria-live="polite">
+              <div class="countdown-item">
+                <div class="countdown-item__card">
+                  <span id="cdDays" class="countdown-item__number">00</span>
+                </div>
+                <span class="countdown-item__label">Días</span>
+              </div>
+
+              <div class="countdown-item">
+                <div class="countdown-item__card">
+                  <span id="cdHours" class="countdown-item__number">00</span>
+                </div>
+                <span class="countdown-item__label">Horas</span>
+              </div>
+
+              <div class="countdown-item">
+                <div class="countdown-item__card">
+                  <span id="cdMinutes" class="countdown-item__number">00</span>
+                </div>
+                <span class="countdown-item__label">Minutos</span>
+              </div>
+
+              <div class="countdown-item">
+                <div class="countdown-item__card">
+                  <span id="cdSeconds" class="countdown-item__number">00</span>
+                </div>
+                <span class="countdown-item__label">Segundos</span>
+              </div>
+            </div>
+
+            <!-- Mensaje cuando llegue la fecha -->
+            <div id="countdownCompleted" class="countdown-completed" hidden>
+              <p class="countdown-completed__text">¡Llegó el gran día! DREAM 2026</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           7. GALERÍA DE ESTUDIANTES ("LOS PROTAGONISTAS DE NUESTRO SUEÑO")
+           =================================================================== -->
+      <section id="estudiantes" class="section students-section">
+        <div class="container">
+          <div class="section-header reveal-item">
+            <span class="section-header__eyebrow">Promoción DREAM 2026</span>
+            <h2 class="section-header__title">LOS PROTAGONISTAS DE NUESTRO SUEÑO</h2>
+            <div class="ornamental-divider" aria-hidden="true">
+              <span class="ornamental-divider__line"></span>
+              <span class="ornamental-divider__diamond">◆</span>
+              <span class="ornamental-divider__line"></span>
+            </div>
+            <p class="section-header__subtitle">
+              Toca o selecciona cualquier fotografía para apreciarla en tamaño completo.
+            </p>
+          </div>
+
+          <div class="students-grid">
+            <!-- Estudiante 1: Ruth Vania Calderón Ríos -->
+            <article
+              class="student-card reveal-item"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada de Ruth Vania Calderón Ríos"
+              data-lightbox-group="students"
+              data-src="assets/estudiantes/calderon-rios-ruth-vania.jpg"
+              data-title="Ruth Vania Calderón Ríos"
+              data-subtitle="Promoción DREAM 2026 • Colegio Particular Evangélico La Misión de Jesús"
+            >
+              <div class="student-card__frame">
+                <div class="student-card__img-wrap">
+                  <img
+                    src="assets/estudiantes/calderon-rios-ruth-vania.jpg"
+                    alt="Graduada Ruth Vania Calderón Ríos"
+                    class="student-card__img"
+                    loading="lazy"
+                  />
+                  <div class="student-card__zoom-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="7" />
+                      <path d="M20 20l-4-4M11 8v6M8 11h6" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="student-card__info">
+                  <span class="student-card__tag">GRADUADA DREAM 2026</span>
+                  <h3 class="student-card__name">Ruth Vania Calderón Ríos</h3>
+                  <p class="student-card__official-name">Calderón Ríos Ruth Vania</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Estudiante 2: Neidy Briyid Carvajal Seas -->
+            <article
+              class="student-card reveal-item"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada de Neidy Briyid Carvajal Seas"
+              data-lightbox-group="students"
+              data-src="assets/estudiantes/carvajal-seas-neidy-briyid.jpg"
+              data-title="Neidy Briyid Carvajal Seas"
+              data-subtitle="Promoción DREAM 2026 • Colegio Particular Evangélico La Misión de Jesús"
+            >
+              <div class="student-card__frame">
+                <div class="student-card__img-wrap">
+                  <img
+                    src="assets/estudiantes/carvajal-seas-neidy-briyid.jpg"
+                    alt="Graduada Neidy Briyid Carvajal Seas"
+                    class="student-card__img"
+                    loading="lazy"
+                  />
+                  <div class="student-card__zoom-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="7" />
+                      <path d="M20 20l-4-4M11 8v6M8 11h6" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="student-card__info">
+                  <span class="student-card__tag">GRADUADA DREAM 2026</span>
+                  <h3 class="student-card__name">Neidy Briyid Carvajal Seas</h3>
+                  <p class="student-card__official-name">Carvajal Seas Neidy Briyid</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Estudiante 3: Sebastián Lozano Herrera -->
+            <article
+              class="student-card reveal-item"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada de Sebastián Lozano Herrera"
+              data-lightbox-group="students"
+              data-src="assets/estudiantes/lozano-herrera-sebastian.jpg"
+              data-title="Sebastián Lozano Herrera"
+              data-subtitle="Promoción DREAM 2026 • Colegio Particular Evangélico La Misión de Jesús"
+            >
+              <div class="student-card__frame">
+                <div class="student-card__img-wrap">
+                  <img
+                    src="assets/estudiantes/lozano-herrera-sebastian.jpg"
+                    alt="Graduado Sebastián Lozano Herrera"
+                    class="student-card__img"
+                    loading="lazy"
+                  />
+                  <div class="student-card__zoom-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="7" />
+                      <path d="M20 20l-4-4M11 8v6M8 11h6" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="student-card__info">
+                  <span class="student-card__tag">GRADUADO DREAM 2026</span>
+                  <h3 class="student-card__name">Sebastián Lozano Herrera</h3>
+                  <p class="student-card__official-name">Lozano Herrera Sebastián</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Estudiante 4: Cristhofer Suárez Salazar -->
+            <article
+              class="student-card reveal-item"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada de Cristhofer Suárez Salazar"
+              data-lightbox-group="students"
+              data-src="assets/estudiantes/suarez-salazar-cristhofer.jpg"
+              data-title="Cristhofer Suárez Salazar"
+              data-subtitle="Promoción DREAM 2026 • Colegio Particular Evangélico La Misión de Jesús"
+            >
+              <div class="student-card__frame">
+                <div class="student-card__img-wrap">
+                  <img
+                    src="assets/estudiantes/suarez-salazar-cristhofer.jpg"
+                    alt="Graduado Cristhofer Suárez Salazar"
+                    class="student-card__img"
+                    loading="lazy"
+                  />
+                  <div class="student-card__zoom-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="7" />
+                      <path d="M20 20l-4-4M11 8v6M8 11h6" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="student-card__info">
+                  <span class="student-card__tag">GRADUADO DREAM 2026</span>
+                  <h3 class="student-card__name">Cristhofer Suárez Salazar</h3>
+                  <p class="student-card__official-name">Suárez Salazar Cristhofer</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Estudiante 5: Giuliana Marieth Tapia Maita -->
+            <article
+              class="student-card reveal-item"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada de Giuliana Marieth Tapia Maita"
+              data-lightbox-group="students"
+              data-src="assets/estudiantes/tapia-maita-giuliana-marieth.jpg"
+              data-title="Giuliana Marieth Tapia Maita"
+              data-subtitle="Promoción DREAM 2026 • Colegio Particular Evangélico La Misión de Jesús"
+            >
+              <div class="student-card__frame">
+                <div class="student-card__img-wrap">
+                  <img
+                    src="assets/estudiantes/tapia-maita-giuliana-marieth.jpg"
+                    alt="Graduada Giuliana Marieth Tapia Maita"
+                    class="student-card__img"
+                    loading="lazy"
+                  />
+                  <div class="student-card__zoom-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="7" />
+                      <path d="M20 20l-4-4M11 8v6M8 11h6" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="student-card__info">
+                  <span class="student-card__tag">GRADUADA DREAM 2026</span>
+                  <h3 class="student-card__name">Giuliana Marieth Tapia Maita</h3>
+                  <p class="student-card__official-name">Tapia Maita Giuliana Marieth</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Estudiante 6: Olivia Belén Vásquez Salcedo -->
+            <article
+              class="student-card reveal-item"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada de Olivia Belén Vásquez Salcedo"
+              data-lightbox-group="students"
+              data-src="assets/estudiantes/vasquez-salcedo-olivia-belen.jpg"
+              data-title="Olivia Belén Vásquez Salcedo"
+              data-subtitle="Promoción DREAM 2026 • Colegio Particular Evangélico La Misión de Jesús"
+            >
+              <div class="student-card__frame">
+                <div class="student-card__img-wrap">
+                  <img
+                    src="assets/estudiantes/vasquez-salcedo-olivia-belen.jpg"
+                    alt="Graduada Olivia Belén Vásquez Salcedo"
+                    class="student-card__img"
+                    loading="lazy"
+                  />
+                  <div class="student-card__zoom-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="7" />
+                      <path d="M20 20l-4-4M11 8v6M8 11h6" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="student-card__info">
+                  <span class="student-card__tag">GRADUADA DREAM 2026</span>
+                  <h3 class="student-card__name">Olivia Belén Vásquez Salcedo</h3>
+                  <p class="student-card__official-name">Vásquez Salcedo Olivia Belén</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           8. GALERÍA DE RECUERDOS GRUPALES ("RECUERDOS QUE VIVIRÁN PARA SIEMPRE")
+           =================================================================== -->
+      <section id="recuerdos" class="section memories-section">
+        <div class="container">
+          <div class="section-header reveal-item">
+            <span class="section-header__eyebrow">Nuestra Historia En Imágenes</span>
+            <h2 class="section-header__title">RECUERDOS QUE VIVIRÁN PARA SIEMPRE</h2>
+            <div class="ornamental-divider" aria-hidden="true">
+              <span class="ornamental-divider__line"></span>
+              <span class="ornamental-divider__diamond">✦</span>
+              <span class="ornamental-divider__line"></span>
+            </div>
+          </div>
+
+          <!-- Frases Emotivas Destacadas -->
+          <div class="memories-quotes reveal-item">
+            <blockquote class="memory-quote-pill">“Más que compañeros, una familia.”</blockquote>
+            <blockquote class="memory-quote-pill">“Cada recuerdo forma parte de nuestra historia.”</blockquote>
+            <blockquote class="memory-quote-pill">“Los caminos cambian, pero la amistad permanece.”</blockquote>
+          </div>
+
+          <!-- Carrusel Principal Interactivo -->
+          <div class="carousel-container reveal-item" aria-roledescription="carousel" aria-label="Galería de recuerdos de la Promoción DREAM 2026">
+            <div class="carousel-stage-wrapper">
+              <!-- Botón Anterior -->
+              <button id="carouselPrev" class="carousel-nav carousel-nav--prev" type="button" aria-label="Fotografía anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              <!-- Escenario de Imagen -->
+              <div id="carouselStage" class="carousel-stage">
+                <img
+                  id="carouselMainImg"
+                  src="assets/grupales/DSC_0637.jpg"
+                  alt="Recuerdo grupal Promoción DREAM 2026"
+                  class="carousel-stage__img"
+                />
+                <button
+                  id="carouselFullscreenBtn"
+                  class="carousel-fullscreen-btn"
+                  type="button"
+                  aria-label="Ver fotografía en pantalla completa"
+                  title="Pantalla completa"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4" />
+                  </svg>
+                  <span>Pantalla Completa</span>
+                </button>
+
+                <div class="carousel-caption-bar">
+                  <p id="carouselQuoteText" class="carousel-caption-bar__quote">
+                    “Más que compañeros, una familia.”
+                  </p>
+                  <span id="carouselCounter" class="carousel-caption-bar__counter">1 / 32</span>
+                </div>
+              </div>
+
+              <!-- Botón Siguiente -->
+              <button id="carouselNext" class="carousel-nav carousel-nav--next" type="button" aria-label="Fotografía siguiente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Controles de reproducción y miniaturas -->
+            <div class="carousel-controls-bar">
+              <button id="carouselAutoplayBtn" class="carousel-autoplay-btn" type="button" aria-pressed="true">
+                <span class="autoplay-dot"></span>
+                <span id="carouselAutoplayLabel">Carrusel Automático: Activo</span>
+              </button>
+              <button id="toggleAllMemoriesBtn" class="carousel-grid-toggle-btn" type="button">
+                <span>Ver las 32 fotografías en cuadrícula</span>
+              </button>
+            </div>
+
+            <!-- Tira de Miniaturas del Carrusel -->
+            <div id="carouselThumbs" class="carousel-thumbs" role="tablist" aria-label="Miniaturas de recuerdos"></div>
+          </div>
+
+          <!-- Cuadrícula Completa Desplegable de las 27 Fotografías Grupales -->
+          <div id="memoriesFullGrid" class="memories-full-grid" hidden></div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           9. HOMENAJE A LOS DOCENTES ("QUIENES NOS GUIARON EN ESTE CAMINO")
+           =================================================================== -->
+      <section id="docentes" class="section teachers-section">
+        <div class="container">
+          <div class="section-header reveal-item">
+            <span class="section-header__eyebrow">Gratitud Eterna</span>
+            <h2 class="section-header__title">QUIENES NOS GUIARON EN ESTE CAMINO</h2>
+            <div class="ornamental-divider" aria-hidden="true">
+              <span class="ornamental-divider__line"></span>
+              <span class="ornamental-divider__diamond">◆</span>
+              <span class="ornamental-divider__line"></span>
+            </div>
+          </div>
+
+          <!-- Mensaje de agradecimiento a los docentes -->
+          <div class="luxury-card teachers-tribute-banner reveal-item">
+            <p class="teachers-tribute-banner__text">
+              “Nuestro más sincero agradecimiento a los docentes que, con paciencia, dedicación y sabiduría, nos acompañaron en cada paso de nuestra formación. Sus enseñanzas permanecerán siempre con nosotros.”
+            </p>
+          </div>
+
+          <!-- Galería Fotográfica del Plantel Docente y Asesoría -->
+          <div class="teachers-photos-showcase reveal-item">
+            <!-- Fotografía del Plantel Docente -->
+            <article
+              class="teacher-photo-card teacher-photo-card--wide"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada del Plantel Docente"
+              data-lightbox-group="teachers"
+              data-src="assets/docentes/plantel-docente.jpeg"
+              data-title="Plantel Docente"
+              data-subtitle="Colegio Particular Evangélico 'La Misión de Jesús'"
+            >
+              <div class="teacher-photo-card__img-wrap">
+                <img
+                  src="assets/docentes/plantel-docente.jpeg"
+                  alt="Plantel Docente del Colegio Particular Evangélico La Misión de Jesús"
+                  class="teacher-photo-card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="teacher-photo-card__caption">
+                <span class="teacher-photo-card__badge">PLANTEL DOCENTE</span>
+                <h3 class="teacher-photo-card__title">Colegio Particular Evangélico “La Misión de Jesús”</h3>
+                <p class="teacher-photo-card__desc">Formadores de valores, ciencia y fe</p>
+              </div>
+            </article>
+
+            <!-- Fotografía Directora -->
+            <article
+              class="teacher-photo-card"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada de Lic. Betty Callejas Cuellar"
+              data-lightbox-group="teachers"
+              data-src="assets/docentes/asesora.jpeg"
+              data-title="Lic. Betty Callejas Cuellar"
+              data-subtitle="Directora de la Unidad Educativa"
+            >
+              <div class="teacher-photo-card__img-wrap">
+                <img
+                  src="assets/docentes/asesora.jpeg"
+                  alt="Lic. Betty Callejas Cuellar - Directora de la Unidad Educativa"
+                  class="teacher-photo-card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="teacher-photo-card__caption">
+                <span class="teacher-photo-card__badge">GUÍA Y APOYO</span>
+                <h3 class="teacher-photo-card__title">Lic. Betty Callejas Cuellar</h3>
+                <h3 class="teacher-photo-card__title">Directora de la Unidad Educativa</h3>
+                <p class="teacher-photo-card__desc">Colegio Particular Evangélico “La Misión de Jesús”</p>
+              </div>
+            </article>
+
+            <!-- Fotografía Asesora 1: Lic. Roxana Condori Roman -->
+            <article
+              class="teacher-photo-card"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada de Lic. Roxana Condori Roman"
+              data-lightbox-group="teachers"
+              data-src="assets/docentes/docente.jpeg"
+              data-title="Lic. Roxana Condori Roman"
+              data-subtitle="Asesora de la Promoción DREAM 2026"
+            >
+              <div class="teacher-photo-card__img-wrap">
+                <img
+                  src="assets/docentes/docente.jpeg"
+                  alt="Lic. Roxana Condori Roman - Asesora de la Promoción DREAM 2026"
+                  class="teacher-photo-card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="teacher-photo-card__caption">
+                <span class="teacher-photo-card__badge">MENTORÍA Y VOCACIÓN</span>
+                <h3 class="teacher-photo-card__title">Lic. Roxana Condori Roman</h3>
+                <h3 class="teacher-photo-card__title">Asesora de la Promoción</h3>
+                <p class="teacher-photo-card__desc">Acompañamiento y dedicación junto a DREAM 2026</p>
+              </div>
+            </article>
+
+            <!-- Fotografía Asesora 2: Lic. Gloria Peralta Gonzáles -->
+            <article
+              class="teacher-photo-card"
+              tabindex="0"
+              role="button"
+              aria-label="Ver fotografía ampliada de Lic. Gloria Peralta Gonzáles"
+              data-lightbox-group="teachers"
+              data-src="assets/docentes/asesora2.jpeg"
+              data-title="Lic. Gloria Peralta Gonzáles"
+              data-subtitle="Asesora de la Promoción DREAM 2026"
+            >
+              <div class="teacher-photo-card__img-wrap">
+                <img
+                  src="assets/docentes/asesora2.jpeg"
+                  alt="Lic. Gloria Peralta Gonzáles - Asesora de la Promoción DREAM 2026"
+                  class="teacher-photo-card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="teacher-photo-card__caption">
+                <span class="teacher-photo-card__badge">MENTORÍA Y VOCACIÓN</span>
+                <h3 class="teacher-photo-card__title">Lic. Gloria Peralta Gonzáles</h3>
+                <h3 class="teacher-photo-card__title">Asesora de la Promoción</h3>
+                <p class="teacher-photo-card__desc">Acompañamiento y dedicación junto a DREAM 2026</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Nómina Oficial de Maestros (leída fielmente de nomina de maestros.docx) -->
+          <div class="teachers-roster-block reveal-item">
+            <h3 class="teachers-roster-block__heading">Nómina Oficial del Plantel Docente y Directivo</h3>
+
+            <!-- Directora Destacada -->
+            <div class="director-highlight-card">
+              <div class="director-highlight-card__crown" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <span class="director-highlight-card__role">DIRECTORA</span>
+              <h4 class="director-highlight-card__name">Betty Callejas Cuellar</h4>
+              <p class="director-highlight-card__school">Colegio Particular Evangélico “La Misión de Jesús”</p>
+            </div>
+
+            <!-- Tarjetas de Maestros -->
+            <div class="teachers-roster-grid">
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">MATEMÁTICAS</span>
+                <h4 class="teacher-roster-card__name">Gloria Peralta Gonzáles</h4>
+              </article>
+
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">LENGUAJE</span>
+                <h4 class="teacher-roster-card__name">Ruthmar Pereyra</h4>
+              </article>
+
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">SOCIALES</span>
+                <h4 class="teacher-roster-card__name">Kattia Delgadillo Coca</h4>
+              </article>
+
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">BIOLOGÍA</span>
+                <h4 class="teacher-roster-card__name">Verónica Collazos Carrasco</h4>
+              </article>
+
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">QUÍMICA - ARTES PLÁSTICAS</span>
+                <h4 class="teacher-roster-card__name">Dunia Mita</h4>
+              </article>
+
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">ED. FÍSICA</span>
+                <h4 class="teacher-roster-card__name">Oscar Vallejos</h4>
+              </article>
+
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">FILOSOFÍA</span>
+                <h4 class="teacher-roster-card__name">Angelica Ruiz Casillas</h4>
+              </article>
+
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">VALORES</span>
+                <h4 class="teacher-roster-card__name">Claudia Ortiz</h4>
+              </article>
+
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">MÚSICA</span>
+                <h4 class="teacher-roster-card__name">Crisli Panoso</h4>
+              </article>
+
+              <article class="teacher-roster-card">
+                <span class="teacher-roster-card__subject">INGLÉS</span>
+                <h4 class="teacher-roster-card__name">Roxana Condori Roman</h4>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           10. SECCIÓN ESPECIAL DREAM (SIGNIFICADO DE DREAM)
+           =================================================================== -->
+      <section id="significadoDream" class="section dream-special-section">
+        <div class="container">
+          <div class="luxury-card dream-special-card reveal-item">
+            <span class="corner-ornament corner-ornament--tl" aria-hidden="true"></span>
+            <span class="corner-ornament corner-ornament--tr" aria-hidden="true"></span>
+            <span class="corner-ornament corner-ornament--bl" aria-hidden="true"></span>
+            <span class="corner-ornament corner-ornament--br" aria-hidden="true"></span>
+
+            <span class="section-header__eyebrow">Nuestra Identidad</span>
+
+            <!-- D R E A M con animación dorada -->
+            <div class="dream-monumental" aria-label="D R E A M">
+              <div class="dream-monumental__item" style="--delay: 0s">
+                <span class="dream-monumental__char">D</span>
+                <span class="dream-monumental__word">Divertidos</span>
+              </div>
+              <div class="dream-monumental__item" style="--delay: 0.15s">
+                <span class="dream-monumental__char">R</span>
+                <span class="dream-monumental__word">Recuerdos</span>
+              </div>
+              <div class="dream-monumental__item" style="--delay: 0.3s">
+                <span class="dream-monumental__char">E</span>
+                <span class="dream-monumental__word">Entre</span>
+              </div>
+              <div class="dream-monumental__item" style="--delay: 0.45s">
+                <span class="dream-monumental__char">A</span>
+                <span class="dream-monumental__word">Amigos</span>
+              </div>
+              <div class="dream-monumental__item" style="--delay: 0.6s">
+                <span class="dream-monumental__char">M</span>
+                <span class="dream-monumental__word">Memorables</span>
+              </div>
+            </div>
+
+            <p class="dream-special-card__acronym">
+              DIVERTIDOS RECUERDOS ENTRE AMIGOS MEMORABLES
+            </p>
+
+            <div class="ornamental-divider" aria-hidden="true">
+              <span class="ornamental-divider__line"></span>
+              <span class="ornamental-divider__diamond">✦</span>
+              <span class="ornamental-divider__line"></span>
+            </div>
+
+            <blockquote class="dream-special-card__quote">
+              “No es el final de nuestra historia, es el comienzo de nuestros sueños.”
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           11 & 12. MENSAJE DE DESPEDIDA Y BOTÓN DE UBICACIÓN EN GOOGLE MAPS
+           =================================================================== -->
+      <section id="despedida" class="section farewell-section">
+        <div class="container">
+          <div class="farewell-box reveal-item">
+            <div class="farewell-logo-wrap">
+              <img
+                src="assets/logo/logo.jpeg"
+                alt="Logo Colegio Particular Evangélico La Misión de Jesús"
+                class="farewell-logo"
+                loading="lazy"
+              />
+            </div>
+
+            <p class="farewell-school">
+              COLEGIO PARTICULAR EVANGÉLICO “LA MISIÓN DE JESÚS”
+            </p>
+
+            <h2 class="farewell-title">¡TE ESPERAMOS!</h2>
+
+            <p class="farewell-message">
+              Tu presencia hará que esta velada sea aún más especial e inolvidable para cada uno de nosotros. Gracias por ser parte de nuestro camino y acompañarnos a celebrar este gran logro.
+            </p>
+
+            <div class="farewell-event-summary">
+              <span>Sábado 28 de Noviembre de 2026</span>
+              <span class="dot-sep" aria-hidden="true">•</span>
+              <span>19:00 Hrs. (7:00 PM)</span>
+            </div>
+
+            <div class="farewell-actions">
+              <a
+                href="https://maps.app.goo.gl/WTrRxNeZVKfU1EFV9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-gold btn-gold--large"
+              >
+                <span class="btn-gold__shimmer" aria-hidden="true"></span>
+                <svg class="btn-gold__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="btn-gold__text">VER UBICACIÓN EN GOOGLE MAPS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p class="site-footer__promo">PROMOCIÓN DREAM 2026</p>
+        <p class="site-footer__meaning">“Divertidos Recuerdos Entre Amigos Memorables”</p>
+        <p class="site-footer__school">Colegio Particular Evangélico “La Misión de Jesús” • 2026</p>
+        <p class="site-footer__credits">
+          Paquete de Promoción e Invitación Digital realizado por <strong>Producciones Cristo Rey</strong> • WhatsApp: <a href="https://wa.me/59172628234" target="_blank" rel="noopener noreferrer">72628234</a> - <a href="https://wa.me/59165895033" target="_blank" rel="noopener noreferrer">65895033</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- =====================================================================
+       COMPONENTE DE AUDIO Y BOTONES FLOTANTES
+       ===================================================================== -->
+  <audio id="bgAudio" src="music/yelow.mp3" loop preload="auto">
+    <source src="music/yelow.mp3" type="audio/mpeg" />
+    <source src="music/yelow.mpeg" type="audio/mpeg" />
+  </audio>
+
+  <div class="floating-controls">
+    <!-- Botón Flotante de Música (Activar / Silenciar) -->
+    <button
+      id="musicToggleBtn"
+      class="floating-btn floating-btn--music"
+      type="button"
+      aria-label="Activar o silenciar música de fondo"
+      aria-pressed="false"
+      title="Activar / Silenciar música"
+    >
+      <span class="music-bars" aria-hidden="true">
+        <span class="music-bars__bar"></span>
+        <span class="music-bars__bar"></span>
+        <span class="music-bars__bar"></span>
+        <span class="music-bars__bar"></span>
+      </span>
+      <svg class="mute-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6" />
+      </svg>
+      <span class="floating-btn__label" id="musicBtnLabel">Música</span>
+    </button>
+
+    <!-- Botón Flotante para Regresar al Inicio -->
+    <button
+      id="backToTopBtn"
+      class="floating-btn floating-btn--top"
+      type="button"
+      aria-label="Regresar al inicio"
+      title="Regresar al inicio"
+      hidden
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- =====================================================================
+       VENTANA MODAL (LIGHTBOX PANTALLA COMPLETA PARA FOTOS)
+       ===================================================================== -->
+  <div
+    id="lightboxModal"
+    class="lightbox-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="lightboxTitle"
+    hidden
+  >
+    <div id="lightboxBackdrop" class="lightbox-modal__backdrop"></div>
+
+    <div class="lightbox-modal__container">
+      <button id="lightboxClose" class="lightbox-modal__close" type="button" aria-label="Cerrar vista ampliada (Escape)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <button id="lightboxPrev" class="lightbox-modal__nav lightbox-modal__nav--prev" type="button" aria-label="Imagen anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <figure class="lightbox-modal__figure">
+        <div class="lightbox-modal__img-frame">
+          <img id="lightboxImg" src="" alt="" class="lightbox-modal__img" />
+        </div>
+        <figcaption class="lightbox-modal__caption">
+          <h3 id="lightboxTitle" class="lightbox-modal__title"></h3>
+          <p id="lightboxSubtitle" class="lightbox-modal__subtitle"></p>
+        </figcaption>
+      </figure>
+
+      <button id="lightboxNext" class="lightbox-modal__nav lightbox-modal__nav--next" type="button" aria-label="Imagen siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Script Principal -->
+  <script src="js/script.js"></script>
+</body>
+</html>
